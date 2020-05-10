@@ -1,0 +1,13 @@
+venv
+.idea
+.ipynb_checkpoints
+__pycache__/
+teste_script.py
+prepara_banco.py
+daoTeste.py
+model.py
+prepara_sqlalchemy.py
+dao.py
+testes.py
+send_email.py
+app_config.py
