@@ -1,14 +1,13 @@
 from urllib.request import urlopen
-from bs4 import BeautifulSoup
-
-"""Importando os submódulos que vão ajudar a tratar os erros"""
 from urllib.error import HTTPError
 from urllib.error import URLError
+from bs4 import BeautifulSoup
 from sqlalchemy import *
 
+"""String de conexão com o banco"""
 engine = create_engine('postgresql://postgres@localhost/crawler_book',echo=True)
 
-def main():
+def main():g
     # url de pesquisa
     for pag in range(1,3):
         url = 'http://books.toscrape.com/catalogue/'+'page-'+str(pag)+'.html'
@@ -38,7 +37,7 @@ def main():
             stock.append(livro.find('p', class_='instock availability').text.strip())
             nome_livro.append(livro.find('h3').text)
 
-        """Chamada da função para insert n banco"""
+        """Chamada da função para insert no banco"""
         banco_insert(preco, nome_livro, stock)
 
 def banco_insert(preco, nome_livro, stock):
