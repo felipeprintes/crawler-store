@@ -7,7 +7,7 @@ from sqlalchemy import *
 """String de conexão com o banco"""
 engine = create_engine('postgresql://postgres@localhost/crawler_book',echo=True)
 
-def main():g
+def main():
     # url de pesquisa
     for pag in range(1,3):
         url = 'http://books.toscrape.com/catalogue/'+'page-'+str(pag)+'.html'
