@@ -6,7 +6,7 @@ Link: http://books.toscrape.com/
 # O que preciso saber 
 |Código             | Objetivo|
 |-------------------|---------|
-|capturaDados.py    |Código responsável por ir no site e recuperar inforções como preo,nome e se o livro está ou não em stock|
+|capturaDados.py    |Código responsável por ir no site e recuperar inforções como preço, nome e se o livro está ou não em stock|
 
 # O que preciso para executar esse código
  
